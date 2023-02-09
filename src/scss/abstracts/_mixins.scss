@@ -1,0 +1,8 @@
+@use "functions" as *;
+
+@mixin container {
+  max-width: rem(1190);
+  padding-right: rem(40);
+  padding-left: rem(40);
+  margin: 0 auto;
+}

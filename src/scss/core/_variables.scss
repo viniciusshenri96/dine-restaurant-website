@@ -1,0 +1,25 @@
+@use "../abstracts/functions" as *;
+
+$font-1: "League Spartan", sans-serif;
+
+// titles
+$font-xl: rem(80);
+$font-l: rem(48);
+$font-m: rem(20);
+$font-s: rem(17);
+
+// body
+$font-body1: rem(20);
+$font-body2: rem(16);
+
+// button:
+$font-button: rem(17);
+
+// form
+$font-form: rem(20);
+
+// form error
+$font-error: rem(10);
+
+// form numbers
+$font-numbers: rem(20);

@@ -1,0 +1,48 @@
+@use "variables" as *;
+@use "../abstracts/functions" as *;
+
+// titles
+@mixin font-xl {
+  font: var(--fw-light) $font-xl / var(--lh-xl) $font-1;
+}
+
+@mixin font-l {
+  font: var(--fw-bold) $font-l / var(--lh-l) $font-1;
+}
+
+@mixin font-m {
+  font: var(--fw-bold) $font-m / var(--lh-m) $font-1;
+}
+
+@mixin font-s {
+  font: var(--fw-light) $font-s / var(--lh-s) $font-1;
+}
+
+// body
+@mixin font-body1 {
+  font: var(--fw-regular) $font-body1 / var(--lh-body1) $font-1;
+}
+
+@mixin font-body2 {
+  font: var(--fw-regular) $font-body2 / var(--lh-body2) $font-1;
+}
+
+// button:
+@mixin font-button {
+  font: var(--fw-semiBold) $font-button / var(--lh-button) $font-1;
+}
+
+// form
+@mixin font-form {
+  font: var(--fw-regular) $font-form / var(--lh-form) $font-1;
+}
+
+// form error
+@mixin font-formError {
+  font: var(--fw-regular) $font-error / var(--lh-formError) $font-1;
+}
+
+// form numbers
+@mixin font-formNumbers {
+  font: var(--fw-bold) $font-numbers / var(--lh-formNumbers) $font-1;
+}
