@@ -1,0 +1,23 @@
+{
+  "name": "dine-restaurant",
+  "version": "1.0.0",
+  "description": "site a website for dine restaurant",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusshenri96/dine-restaurant-website.git"
+  },
+  "author": "Vinicius Henrique",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciusshenri96/dine-restaurant-website/issues"
+  },
+  "homepage": "https://github.com/viniciusshenri96/dine-restaurant-website#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  }
+}
