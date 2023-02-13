@@ -1,3 +1,52 @@
 @use "../abstracts/functions" as *;
 @use "../abstracts/mixins" as *;
 @use "../core/typography" as *;
+
+.header {
+  height: rem(820);
+  background: url(../images/homepage/hero-bg-desktop.jpg);
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: rem(895);
+    height: rem(820);
+    background: #181818;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    // mix-blend-mode: multiply;
+  }
+
+  &__logo {
+    display: inline-block;
+    padding-bottom: rem(153);
+  }
+  .hero {
+    z-index: 999;
+    @include container;
+    padding-top: rem(65);
+    color: var(--color-white);
+
+    &__title {
+      max-width: rem(508);
+      @include font-xl;
+      padding-bottom: rem(10);
+    }
+
+    &__desc {
+      max-width: rem(445);
+      @include font-body1;
+      margin-bottom: rem(40);
+    }
+
+    .btn--transparent {
+      @include font-button;
+      text-transform: uppercase;
+      letter-spacing: rem(2.5);
+      border: rem(1) solid var(--color-white);
+    }
+  }
+}
