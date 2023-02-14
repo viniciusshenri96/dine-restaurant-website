@@ -4,21 +4,22 @@
 
 .header {
   height: rem(820);
-  background: url(../images/homepage/hero-bg-desktop.jpg);
+  background: url(../images/homepage/hero-bg-desktop.jpg) no-repeat center
+    center;
   position: relative;
 
-  &::before {
-    content: "";
-    display: block;
-    width: rem(895);
-    height: rem(820);
-    background: #181818;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    // mix-blend-mode: multiply;
-  }
+  // &::before {
+  //   content: "";
+  //   display: block;
+  //   width: rem(895);
+  //   height: rem(820);
+  //   background: #181818;
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   z-index: -1;
+  //   // mix-blend-mode: multiply;
+  // }
 
   &__logo {
     display: inline-block;
@@ -47,6 +48,77 @@
       text-transform: uppercase;
       letter-spacing: rem(2.5);
       border: rem(1) solid var(--color-white);
+    }
+  }
+}
+
+.place-box {
+  max-width: rem(1440);
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+
+  .place__bg {
+    position: absolute;
+    top: 0;
+    width: rem(895);
+    height: rem(320);
+    border-radius: 0 rem(100) 0 0;
+    background: var(--color-shuttleGray);
+    opacity: 0.08;
+    margin-top: rem(250);
+  }
+  .place {
+    @include container;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: rem(125);
+    justify-content: space-between;
+
+    &__img-box {
+      .place__img {
+        transform: translateY(-70px);
+      }
+    }
+
+    &__content-box {
+      max-width: rem(445);
+      position: relative;
+      // align-self: center;
+      margin-top: rem(239);
+
+      .place__title {
+        max-width: rem(400);
+        @include font-l;
+        color: var(--color-ebonyClay);
+        margin-bottom: rem(27);
+
+        &::before {
+          content: "";
+          width: rem(7);
+          height: rem(7);
+          border: rem(1) solid var(--color-beaver);
+          border-radius: 100%;
+          background: transparent;
+          position: absolute;
+          top: rem(-58);
+        }
+
+        &::after {
+          content: "";
+          width: rem(56);
+          height: rem(1);
+          background: var(--color-beaver);
+          position: absolute;
+          top: rem(-56);
+          left: rem(16);
+        }
+      }
+
+      .place__desc {
+        @include font-body1;
+        color: var(--color-ebonyClay);
+      }
     }
   }
 }
