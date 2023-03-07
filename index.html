@@ -17,9 +17,10 @@
       <a class="header__logo" href="">
         <img src="./src/images/logo.svg" alt="">
       </a>
-      <h1 class="hero__title">Exquisite dining
+      <h1 class="header__hero-title">Exquisite dining
         since 1989</h1>
-      <p class="hero__desc">Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce
+      <p class="header__hero-desc">Experience our seasonal menu in beautiful country surroundings. Eat the freshest
+        produce
         from the comfort of our farmhouse.</p>
       <a class="btn btn--transparent" href="./booking.html">Book a table</a>
     </section>
@@ -28,6 +29,8 @@
   <section class="place-box">
     <div class="place">
       <picture class="place__img-box">
+        <!-- <source media="(max-width: 500px)" srcset="./src/images/homepage/enjoyable-place-tablet.jpg"> -->
+        <source media="(min-width: 240px)" srcset="./src/images/homepage/enjoyable-place-mobile.jpg">
         <img class="place__img" src="./src/images/homepage/enjoyable-place-desktop.jpg" alt="">
       </picture>
       <div class="place__content-box">
@@ -39,10 +42,31 @@
           a tour of the farm before your meal.</p>
       </div>
     </div>
-    <div class="place__bg"></div>
+    <!-- <div class="place__bg"></div> -->
+  </section>
 
+  <section class="place-box place-box--padding">
+    <div class="place">
+      <picture class="place__img-box">
+        <source media="(min-width: 240px)" srcset="./src/images/homepage/locally-sourced-mobile.jpg">
+        <img class="place__img" src="./src/images/homepage/locally-sourced-desktop.jpg" alt="">
+      </picture>
+      <div class="place__content-box">
+        <h2 class="place__title">Enjoyable place
+          for all the family</h2>
+        <p class="place__desc"> Our relaxed surroundings make dining with us a great experience for everyone. We can
+          even
+          arrange
+          a tour of the farm before your meal.</p>
+      </div>
+    </div>
+    <!-- <div class="place__bg"></div> -->
+  </section>
+
+  <section class="highlights">
 
   </section>
+
 
 
   The most locally sourced food

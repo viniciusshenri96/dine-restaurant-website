@@ -1,0 +1,76 @@
+@use "../abstracts/functions" as *;
+@use "../abstracts/mixins" as *;
+@use "../core/typography" as *;
+@use "../core/variables" as *;
+
+@mixin placeComponent {
+  .place-box {
+    padding: 0 rem(24);
+    margin-top: rem(-72);
+    margin-bottom: rem(101);
+
+    text-align: center;
+    .place {
+      height: rem(662);
+      display: grid;
+      justify-items: center;
+      row-gap: rem(91);
+    }
+
+    .place__img-box {
+      box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+      height: max-content;
+      .place__img {
+        width: 100%;
+      }
+    }
+
+    .place__content-box {
+      max-width: rem(327);
+      position: relative;
+
+      .place__title {
+        font: var(--fw-bold) rem(32) / #{1.25} $font-1;
+        margin-bottom: rem(13);
+        position: relative;
+        max-width: rem(238);
+        margin: auto auto rem(13) auto;
+
+        &::after {
+          content: "";
+          width: rem(7);
+          height: rem(7);
+          border-radius: 100%;
+          border: 1px solid var(--color-beaver);
+          position: absolute;
+          // top: rem(-36);
+          // left: rem(126);
+          top: -44%;
+          left: 33%;
+        }
+
+        &::before {
+          content: "";
+          width: rem(56);
+          height: rem(1);
+          background: var(--color-beaver);
+          position: absolute;
+          // top: rem(-33);
+          // left: rem(141);
+          top: -40%;
+          left: 40%;
+        }
+      }
+
+      .place__desc {
+        @include font-body2;
+      }
+    }
+  }
+}
+
+@mixin placeComponent2 {
+  .place-box--padding {
+    margin-top: 0;
+  }
+}

@@ -1,17 +1,46 @@
 @use "../abstracts/functions" as *;
 @use "../abstracts/mixins" as *;
 @use "../core/typography" as *;
+@use "../core/variables" as *;
+@use "../components/place" as *;
 
 .header {
-  background: url(../images/homepage/hero-bg-mobile.jpg) no-repeat center center;
+  background: url(../images/homepage/hero-bg-mobile.jpg) no-repeat top center;
   height: rem(748);
+  background-size: cover;
   display: grid;
-  align-items: start;
+  align-items: end;
+  justify-items: center;
+
+  // @media (min-width: 500px) {
+  //   background-size: 396px;
+  // }
 
   &__hero {
     align-self: end;
     padding: 0 rem(24);
     margin-bottom: rem(152);
     text-align: center;
+    height: max-content;
+    // max-width: rem(327);
+    .header__logo {
+      display: inline-block;
+      margin-bottom: rem(36);
+    }
+
+    &-title {
+      font: var(--fw-light) rem(32) / #{1.25} $font-1;
+      color: #fff;
+      margin-bottom: rem(21);
+    }
+    &-desc {
+      font: var(--fw-light) rem(16) / #{1.62} $font-1;
+      color: #fff;
+      margin-bottom: rem(53);
+    }
   }
 }
+
+@include placeComponent;
+
+@include placeComponent2;

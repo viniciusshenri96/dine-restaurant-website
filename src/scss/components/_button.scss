@@ -6,6 +6,8 @@
   display: inline-block;
   @include font-button;
   padding: rem(25) rem(48) rem(23) rem(48);
+  text-transform: uppercase;
+  letter-spacing: rem(2.5);
   color: #ffffff;
   transition: 0.3s;
 
@@ -13,4 +15,10 @@
     background-color: #ffffff;
     color: var(--color-mirage);
   }
+}
+
+.btn--transparent:link,
+.btn--transparent:visited {
+  border: 1px solid #ffffff;
+  padding: rem(25) rem(55) rem(23) rem(54);
 }
