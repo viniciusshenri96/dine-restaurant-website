@@ -190,11 +190,39 @@
     center;
   padding: rem(84) rem(24) rem(80) rem(24);
   text-align: center;
-
+  height: rem(328);
   .reservation__title {
     font: var(--fw-bold) rem(32) / #{1.25} $font-1;
     letter-spacing: rem(-0.4);
     color: var(--color-white);
     margin-bottom: rem(20);
+  }
+}
+
+.footer-bg {
+  background-color: #111111;
+  padding: rem(80) rem(24) rem(78) rem(24);
+
+  .footer {
+    display: grid;
+    justify-items: center;
+    font: var(--fw-regular) rem(14) / #{2} $font-1;
+    color: var(--color-white);
+    letter-spacing: rem(2);
+    text-transform: uppercase;
+    text-align: center;
+
+    a:link {
+      color: var(--color-white);
+    }
+
+    &__logo {
+      margin-bottom: rem(42);
+    }
+
+    &__address {
+      margin-bottom: rem(32);
+      font: var(--fw-regular) rem(14) / #{2} $font-1;
+    }
   }
 }
